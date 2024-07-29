@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <title>Anamel</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="eCommerce HTML Template Free Download" name="keywords">
+    <meta content="eCommerce HTML Template Free Download" name="description">
+    <link href="img/favicon.ico" rel="icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <i class="fa fa-envelope"></i>
+                    anamel@email.com
+                </div>
+                <div class="col-sm-6">
+                    <i class="fa fa-phone-alt"></i>
+                    +012-345-6789
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <a href="#" class="navbar-brand">MENU</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav mr-auto">
+                        <a href="index.html" class="nav-item nav-link active">الرئيسية</a>
+                        <a href="Category.html" class="nav-item nav-link">الاصناف</a>
+                        <a href="aboutus.html" class="nav-item nav-link">عن أنامل</a>
+                        <a href="index.html" class="nav-item nav-link" style="display: none;" id="logout">تسجيل الخروج</a>
+                    </div>
+
+                    <div class="navbar-nav ml-auto" style="display: inline;" id="in">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">حسابي</a>
+                            <div class="dropdown-menu">
+                                <a href="login.html" class="dropdown-item">تسجيل الدخول</a>
+                                <a href="register.html" class="dropdown-item">تسجيل اشتراك</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="dropdown-item">تواصل معنا</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="login">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="login-form" style="text-align: right;">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>الايميل</label>
+                                <input class="form-control" type="email" placeholder="الايميل" id="email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label>كلمة السر</label>
+                                <input class="form-control" type="password" placeholder="كلمة السر" id="pass" required>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="newaccount">
+                                    <label class="custom-control-label" for="newaccount">الحفاظ على تسجيل دخول</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn" onclick="handleSubmit()">تسجيل الدخول</button>
+                            </div>
+                            <a href="register.html">ليس لدي حساب تسجيل الاشتراك</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>ابق على تواصل معنا</h2>
+                        <div class="contact-info">
+                            <p>anamel@gmail.com<i class="fa fa-envelope"></i></p>
+                            <p>+123-456-7890<i class="fa fa-phone"></i></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>تابعنا</h2>
+                        <div class="contact-info">
+                            <div class="social">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <ul>
+                            <li><a href="aboutus.html">عن أنامل</a></li>
+                            <li><a href="PrivacyPolicy.html">سياسة الخصوصية</a></li>
+                            <li><a href="Terms.html">الشروط والأحكام</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="img/logo.png" alt="Logo" style="width: 150px !important;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 copyright">
+                    <p>Copyright &copy; <a href="anamel@gmail.com">anamel@gmail.com</a>. All Rights Reserved</p>
+                </div>
+
+                <div class="col-md-6 template-by">
+                    <p>Template By <a href="anamel@gmail.com">anamel@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script>
+        function handleSubmit() {
+            const email = document.getElementById('email').value;
+            const pass = document.getElementById('pass').value;
+
+            // Validate the credentials (this is a basic example, you should validate against a server)
+            if (email === 'hadeelzoubi@gmail.com' && pass === '123') {
+                localStorage.setItem('loggedIn', true);
+                window.location.href = 'index.html';
+            } else {
+                alert('Invalid credentials');
+            }
+        }
+        
+    </script> -->
+
+    <script>
+        function handleSubmit() {
+            const email = document.getElementById('email').value;
+            const pass = document.getElementById('pass').value;
+
+            fetch('data.json')
+                .then(response => response.json())
+                .then(data => {
+                    const user = data.find(user => user.email === email && user.password === pass);
+                    if (user) {
+                        localStorage.setItem('loggedIn', true);
+                        localStorage.setItem('role', user.role);
+                        if (user.role === 'admin') {
+                            window.location.href = 'admin-dashboard.html';
+                        } else {
+                            window.location.href = 'index.html';
+                        }
+                    } else {
+                        alert('Invalid credentials');
+                    }
+                });
+        }
+    </script>
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <script src="auth.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
