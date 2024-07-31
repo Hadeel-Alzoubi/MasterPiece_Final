@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <title>Anamel</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="eCommerce HTML Template Free Download" name="keywords">
+        <meta content="eCommerce HTML Template Free Download" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Top bar Start -->
+        <div class="top-bar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <i class="fa fa-envelope"></i>
+                        anamel@email.com
+                    </div>
+                    <div class="col-sm-6">
+                        <i class="fa fa-phone-alt"></i>
+                        +012-345-6789
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top bar End -->
+        
+        <!-- Nav Bar Start -->
+        <div class="nav">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="index.html" class="nav-item nav-link active">الرئيسية</a>
+                            <a href="#cate" class="nav-item nav-link ">الاصناف</a>
+                            <!-- <a href="my-account.html" class="nav-item nav-link">حسابي</a> هاي الداش بورد لليوزر و الادمن-->
+                            <a href="aboutus.html" class="nav-item nav-link">عن أنامل</a>
+                            <a href="index.html" class="nav-item nav-link" style="display: none;" id="logout">تسجيل الخروج</a>                            
+                        </div>
+
+                        <div class="navbar-nav ml-auto"> 
+                            <div class="nav-item dropdown" style="display: inline;" id="in">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">حسابي</a>
+                                <div class="dropdown-menu">
+                                    <a href="login.html" class="dropdown-item">تسجيل الدخول</a>
+                                    <a href="register.html" class="dropdown-item">تسجيل اشتراك</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="dropdown-item">تواصل معنا</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->      
+        
+
+        <!-- Bottom Bar End -->       
+        <div class="form-wrap" style="text-align: right; ">
+            <form id="productForm" class="product-form" enctype="multipart/form-data">
+                <h2>اضافة منتج</h2>
+                <label for="productName">اسم المنتج:</label>
+                <input type="text" id="productName" name="productName" required>
+
+                <label for="productDescription">وصف المنتج:</label>
+                <textarea id="productDescription" name="productDescription" required></textarea>
+
+                <label for="productPrice">سعر المنتج:</label>
+                <input type="number" id="productPrice" name="productPrice" required>
+
+                <label for="productImage">صورة عن المنتج:</label>
+                <input type="file" id="productImage" name="productImage" accept="image/*" required>
+
+                <button type="submit" class="submit-btn">اضافة</button>
+            </form>
+        </div>
+
+<!-- هون اضافة ال فوووورم للبرودكت -->
+        <!-- Featured Product End -->
+        
+ 
+        
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        <script>
+            function addToCart() {
+                if (localStorage.getItem('loggedIn')) {
+                    alert('تمت الإضافة إلى السلة بنجاح');
+                    window.location.href = '#';
+                } else {
+                    alert('يرجى تسجيل الدخول لإضافة منتجات إلى السلة');
+                    window.location.href = 'login.html';
+                }
+            }
+    
+            function addToWishlist() {
+                if (localStorage.getItem('loggedIn')) {
+                    alert('تمت الإضافة إلى المفضلة بنجاح');
+                    window.location.href = '#';
+                } else {
+                    alert('يرجى تسجيل الدخول لإضافة منتجات إلى المفضلة');
+                    window.location.href = 'login.html';
+                }
+            }
+        </script>
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+        <script src="auth.js"></script>
+        <!-- Template Javascript -->
+        <script src="script.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

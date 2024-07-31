@@ -136,6 +136,10 @@
                             <div class="tab-pane fade" id="orders-tab" role="tabpanel" aria-labelledby="orders-nav">
                                 <div class="table-responsive">
                                     <table class="table table-bordered">
+                                        <div class="col-md-12">
+                                            <button class="btn" onclick="window.location.href='product_info.html'"> اضافة منتج</button>
+                                            <br><br>
+                                        </div>
                                         <thead class="thead-dark">
                                             <tr>
                                                 <th>ID</th>
@@ -144,7 +148,7 @@
                                                 <th>السعر</th>
                                                 <th>الحالة للمنتج</th>
                                                 <th>وصف المنتج</th>
-                                                <th>اضافة صورة للمنتج</th>
+                                                <th>احصائيات كل منتج</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -154,8 +158,9 @@
                                                 <td>01 Jan 2020</td>
                                                 <td>200 JD</td>
                                                 <td>تمت الموافقة</td>
-                                                <td> <input type="text"></td>
-                                                <td><button class="btn"> <input type="file" id="productImage" required style="width: 10px;" >اضافة صورة</button></td>
+                                                <td> نسيج</td>
+                                                <td>70%</td>
+                                               
                                             </tr>
                                             <tr>
                                                 <td>2</td>
@@ -163,8 +168,10 @@
                                                 <td>01 Jan 2020</td>
                                                 <td>50 JD</td>
                                                 <td>تمت الموافقة</td>
-                                                <td> <input type="text"></td>
-                                                <td><button class="btn"> <input type="file" id="productImage" required style="width: 10px;">اضافة صورة</button></td>
+                                                <td> نسيج</td>
+                                                <td>70%
+                                                    <!-- <button class="btn"> احصائيات المنتج</button> -->
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>3</td>
@@ -172,8 +179,10 @@
                                                 <td>01 Jan 2020</td>
                                                 <td>10 JD</td>
                                                 <td>تمت الموافقة</td>
-                                                <td> <input type="text"></td>
-                                                <td><button class="btn"> <input type="file" id="productImage" required style="width: 10px;">اضافة صورة</button></td>
+                                                <td> نسيج</td>
+                                                <td>70%
+                                                    <!-- <button class="btn"> احصائيات المنتج</button> -->
+                                                </td>
                                             </tr>
                                             
                                         </tbody>
@@ -232,7 +241,7 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="address-tab" role="tabpanel" aria-labelledby="address-nav">
-                                <h4>ملعومات البيع</h4>
+                                <h4>معلومات البيع</h4>
                                 <div class="container">
                                     <div class="card">
                                       <div class="box">
@@ -386,12 +395,25 @@
                         }
                     }
                 </script>
+                <script>
+                    // When the user clicks on <div>, open the popup
+                    function myFunction() {
+                      var popup = document.getElementById("myPopup");
+                      popup.classList.toggle("show");
+                    }
+                    </script>
                 <!-- JavaScript Libraries -->
                 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
                 <script src="lib/easing/easing.min.js"></script>
                 <script src="lib/slick/slick.min.js"></script>
                 <script src="auth.js"></script>
+                <script>
+                    // Add event listener to button if you want to handle more complex logic
+                    document.querySelector('.btn').addEventListener('click', function() {
+                        window.location.href = 'product_info.html';
+                    });
+                </script>
                 <!-- Template Javascript -->
                 <script src="js/main.js"></script>
             </body>
