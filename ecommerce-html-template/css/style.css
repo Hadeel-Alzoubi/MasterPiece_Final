@@ -2753,7 +2753,7 @@ div .header-slider-item img{
 
 /* Please ❤ this if you like it! */
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900'); */
 
 .form-wrap {
   display: block;
@@ -2815,21 +2815,21 @@ div .header-slider-item img{
   color:#ffffff;
 } */
 
-.logo {
+/* .logo {
   position: absolute;
   top: 25px;
   left: 25px;
   display: block;
   z-index: 1000;
   transition: all 250ms linear;
-}
-.logo img {
+} */
+/* .logo img {
   height: 26px;
   width: auto;
   display: block;
   filter: brightness(10%);
   transition: filter 250ms 700ms linear;
-}
+} */
 
 @media screen and (max-width: 500px) {
   .form-wrap {
