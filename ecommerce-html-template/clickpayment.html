@@ -39,7 +39,7 @@
         <!-- Top bar End -->
         
         <!-- Nav Bar Start -->
-        <div class="nav">
+        <!-- <div class="nav">
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
                     <a href="#" class="navbar-brand">MENU</a>
@@ -51,8 +51,8 @@
                         <div class="navbar-nav mr-auto">
                             <a href="index.html" class="nav-item nav-link active">الرئيسية</a>
                             <a href="#cate" class="nav-item nav-link ">الاصناف</a>
-                            <!-- <a href="my-account.html" class="nav-item nav-link">حسابي</a> هاي الداش بورد لليوزر و الادمن-->
-                            <a href="aboutus.html" class="nav-item nav-link">عن أنامل</a>
+                           <a href="my-account.html" class="nav-item nav-link">حسابي</a> هاي الداش بورد لليوزر و الادمن-->
+                             <!-- <a href="aboutus.html" class="nav-item nav-link">عن أنامل</a>
                             <a href="index.html" class="nav-item nav-link" style="display: none;" id="logout">تسجيل الخروج</a>                            
                         </div>
 
@@ -69,7 +69,7 @@
                     </div>
                 </nav>
             </div>
-        </div>
+        </div> -->
         <!-- Nav Bar End -->      
         
         <!-- Bottom Bar Start -->
@@ -116,97 +116,41 @@
                                 <h2>يرجى ادخال المعلومات بشكل صحيح</h2>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <label>الاسم الاول</label>
-                                        <input class="form-control" type="text" placeholder="الاسم الاول" id="name">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label>الاسم الاخير</label>
-                                        <input class="form-control" type="text" placeholder="الاسم الاخير">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label>الايميل</label>
-                                        <input class="form-control" type="email" placeholder="الايميل" id="email">
-                                    </div>
-                                    <div class="col-md-6">
                                         <label>رقم الهاتف</label>
-                                        <input class="form-control" type="number" placeholder="رقم الهاتف" id="phone">
-                                    </div>
-                                    <div class="col-md-12">
-                                        <label>العنوان</label>
-                                        <input class="form-control" type="text" placeholder="العنوان" id="add">
+                                        <input class="form-control" type="number" placeholder="رقم الهاتف" id="name">
                                     </div>
                                     <div class="col-md-6">
-                                        <label>البلد</label>
-                                        <select class="custom-select">
-                                            <option selected>الرمثا</option>
-                                            <option>ايدون</option>
-                                            <option>بني كنانة</option>
-                                            <option>وسط البلد اربد</option>
-                                        </select>
+                                        <label>الايميل </label>
+                                        <input class="form-control" type="email" placeholder="الايميل " id="e">
                                     </div>
                                     <div class="col-md-6">
-                                        <label>المنطقة</label>
-                                        <input class="form-control" type="text" placeholder="المنطقة">
+                                        <label>التحويل للرقم </label>
+                                        <input class="form-control" type="number" placeholder="077777777" id="phone" readonly>
                                     </div>
-                                    <div class="col-md-12">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="newaccount">
-                                            <label class="custom-control-label" for="newaccount">احفظ المعلومات</label>
+                                     <div class="col-md-6">
+                                        <label>تحويل من خلال الرمز</label>
+                                        <input class="form-control" type="number" placeholder="Anamel" id="phone" readonly>
+                                    </div>
+                                    <div class="checkout-inner">
+                                        <div class="checkout-payment">
+                                            <div class="checkout-btn">
+                                                <button onclick="alertcheck()" style="font-size:medium;">اكمال الطلب</button>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- <div class="col-md-12">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="shipto">
-                                            <label class="custom-control-label" for="shipto">Ship to different address</label>
-                                        </div>
-                                    </div> -->
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <!-- <div class="col-lg-4">
                         <div class="checkout-inner">
-                            <div class="checkout-summary">
-                                <h1>تفاصيل الدفع</h1>
-                                <!-- <p>Product Name<span>$99</span></p> -->
-                                <p class="sub-total">كامل مبلغ الدفع: </p><span>130 JD</span>
-                                <p class="ship-cost">سعر التوصيل:</p><span>توصيل مجاني</span>
-                                <h2>المبلغ الاجمالي:</h2><span>130 JD</span>
-                            </div>
-
                             <div class="checkout-payment">
-                                <div class="payment-methods">
-                                    <h1>طرق الدفع</h1>
-                                    <div class="payment-method">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" class="custom-control-input" id="payment-3" name="payment">
-                                            <label class="custom-control-label" for="payment-3">الدفع عن طريق كليك</label>
-                                        </div>
-                                        <div class="payment-content" id="payment-3-show">
-                                            <p>
-                                               عند التحديد الدفع عن طريق كليك الرجاء التحويل الى الرقم التالي 
-                                               077777777
-                                            </p>
-                                         </div>
-                                    </div>
-                                    <div class="payment-method">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" class="custom-control-input" id="payment-5" name="payment">
-                                            <label class="custom-control-label" for="payment-5">دفع عند الاستلام</label>
-                                        </div>
-                                        <div class="payment-content" id="payment-5-show">
-                                            <p>
-                                              يمكنك الدفع عند الاستلام من غير اي تكاليف اضافية
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="checkout-btn">
                                     <button onclick="alertcheck()" >اكمال الطلب</button>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -297,44 +241,27 @@
             </div>
         </div>
         <!-- Footer Bottom End -->       
-        
+        <script>
+            function alertcheck() {
+                const checkout = document.getElementById('name').value;
+                const email = document.getElementById('e').value;
+               
+            // عرض رسالة بناءً على النتيجة
+          
+              
+                  if (checkout && e) {
+                    
+                    alert('تم سحب المبلغ بنجاح شكرا لثقتك ');
+
+                window.location.href = 'index.html';
+                }
+               
+            } 
+           
+        </script>
         <!-- Back to Top -->
         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-        <script>
-        function alertcheck() {
-            const checkout = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
-            const add = document.getElementById('add').value;
-            const radioButtons = document.getElementsByName('payment');
-        
-            let selectedValue = null;
-            for (const radioButton of radioButtons) {
-                if (radioButton.checked) {
-                    selectedValue = radioButton.id;
-                    break;
-                }
-            }
-        
-            // تحقق من الإدخالات
-            if (selectedValue) {
-                if (checkout && email && phone && add) {
-                    if (selectedValue === 'payment-3') {
-                        window.location.href = 'clickpayment.html';
-                    } else {
-                        alert('تم الطلب بنجاح شكرا لثقتك');
-                        window.location.href = 'index.html';
-                    }
-                } else {
-                    alert('يرجى التاكد من المعلومات كلها و ادخالها');
-                }
-            } else {
-                alert('لم يتم اختيار طريقة الدفع.');
-            }
-        }
-        
-    </script>
-       
+     
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
